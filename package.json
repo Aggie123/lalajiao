@@ -9,7 +9,7 @@
     "webpack": "webpack --progress --color",
     "build": "npm run webpack && npm run start"
   },
-  "author": "",
+  "author": "Nana@BUPT",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.7.7",

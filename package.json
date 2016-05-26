@@ -2,6 +2,19 @@
   "name": "20160422",
   "version": "1.0.0",
   "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Aggie123/react-webpack-babel-hot.git"
+  },
+  "keywords": [
+    "react",
+    "react-router",
+    "webpack",
+    "babel",
+    "react-hot-loader",
+    "framework",
+    "front-end"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +22,7 @@
     "webpack": "webpack --progress --color",
     "build": "npm run webpack && npm run start"
   },
-  "author": "Nana@BUPT",
+  "author": "Aggie123",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.7.7",

@@ -1,9 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head></head>
+<head>
+    <meta charset="UTF-8">
+    <title>MiHome 816</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="mihome">
+    <meta name="description" content="xiaomi,home">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0, minimal-ui">
+    <meta name="imagemode" content="force">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="pragma" content="no-cache">
+    <link rel="shortcut icon" type="image/x-icon" href="http://s1.mi.com/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="http://img01.mifile.cn/m/app/touch-icon.png">
+    <!-- Uncomment this if you need apple touch icon. -->
+    <!--
+    <link rel="apple-touch-icon" href="touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png">
+    -->
+</head>
 <body>
-<p>out</p>
 <div id="app"></div>
+<script>
+    (function (win) {
+        var doc = win.document,
+                html = doc.documentElement;
+        var baseWidth = 1080,
+                grids = baseWidth / 100,
+                resizeEvt = 'orientationchange' in win ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = html.clientWidth || 320;
+                    if (clientWidth > 720) {
+                        clientWidth = 720
+                    }
+                    html.style.fontSize = clientWidth / grids + 'px';
+                };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(window);
+</script>
 <script type="text/javascript" src="./build/bundle.js" charset="utf-8"></script>
 </body>
 </html>

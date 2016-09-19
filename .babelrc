@@ -1,3 +1,10 @@
 {
-  "presets": ["es2015", "react"]
+  "presets": ["es2015", "react"],
+  "plugins": [["antd", 
+  {
+  "style": true,
+  "libraryDirectory": "lib",  // default: lib
+  "libraryName": "antd"            // default: antd
+	}
+	]]
 }

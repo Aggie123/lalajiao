@@ -23,7 +23,7 @@ export default class Customers extends Component {
 
   render() {
     return <div>
-      <p>user:{this.state.id}</p>
+      <p>page2</p>
       <DatePicker/>
       <div>
       <Button type="primary">Primary</Button>

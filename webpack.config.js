@@ -16,23 +16,27 @@ module.exports = {
         extensions: ['', '.js', '.jsx']
     },
     module: {
-        loaders: [
-            {
+        loaders: [{
                 test: /\.css$/,
                 loader: 'style!css'
-            },
-            {
+            }, {
                 test: /\.jsx?$/,
                 loaders: ['react-hot', 'babel'],
                 exclude: /node_modules/
-            },
-            {
+            }, {
                 test: /\.(png|jpg)$/,
                 loader: 'url-loader?limit=8192'
             },
+            // LESS
+            {
+                test: /\.less$/,
+                loader: 'style!css!less'
+            },
+
+            // SASS
             {
                 test: /\.scss$/,
-                loader: 'style-loader!css-loader!sass-loader'
+                loader: 'style!css!sass'
             }
         ]
     },

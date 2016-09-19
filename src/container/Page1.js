@@ -5,7 +5,6 @@ import {
   DatePicker,
   Button
 } from 'antd'
-//import 'antd/dist/antd.css';
 
 export default class Customers extends Component {
   constructor(props) {
@@ -23,7 +22,7 @@ export default class Customers extends Component {
 
   render() {
     return <div>
-      <p>user:{this.state.id}</p>
+      <p>page1</p>
       <DatePicker/>
       <div>
       <Button type="primary">Primary</Button>

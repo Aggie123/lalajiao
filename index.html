@@ -45,6 +45,19 @@
         doc.addEventListener('DOMContentLoaded', recalc, false);
     })(window);
 </script>
+
+<script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBG72qwK_p7iystNq1U8MFNONHQKSdTLFI",
+    authDomain: "chatwithme-e1bb4.firebaseapp.com",
+    databaseURL: "https://chatwithme-e1bb4.firebaseio.com",
+    storageBucket: "chatwithme-e1bb4.appspot.com",
+    messagingSenderId: "976236415971"
+  };
+  firebase.initializeApp(config);
+</script>
 <script type="text/javascript" src="./build/bundle.js" charset="utf-8"></script>
 </body>
 </html>

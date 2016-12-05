@@ -6,7 +6,7 @@ import {
   Button
 } from 'antd'
 
-export default class Page1 extends Component {
+export default class Todo extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -24,16 +24,11 @@ export default class Page1 extends Component {
     return <div>
       <p>page1</p>
       <DatePicker/>
+      <Button type="primary">Add Todo</Button>
       <div>
-      <Button type="primary">Primary</Button>
-      <Button>Default</Button>
-      <Button type="ghost">Ghost</Button>
-      <Button type="dashed">Dashed</Button>
+        <p>Todo List:</p>
+        <p>hello</p>
       </div>
-      <div className="hello"></div>
-      <div className="aaeee"></div>
-      <div className="hello1"></div>
-
     </div>
   }
 }

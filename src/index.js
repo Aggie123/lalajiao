@@ -10,6 +10,7 @@ import App from './app.js'
 import User from './Component/User'
 import Page1 from './container/page1'
 import Page2 from './container/page2'
+import Todo from './container/Todo'
 
 //TODO replace bashHistory with browserHistory
 render((
@@ -18,6 +19,7 @@ render((
         	<Route path="user" component={User}/>
         	<Route path="page1" component={Page1}/>
         	<Route path="page2" component={Page2}/>
+        	<Route path="todo" component={Todo}/>
         </Route>
     </Router>
 ), document.getElementById('app'));

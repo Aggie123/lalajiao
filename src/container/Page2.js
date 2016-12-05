@@ -5,9 +5,8 @@ import {
   DatePicker,
   Button
 } from 'antd'
-//import 'antd/dist/antd.css';
 
-export default class Customers extends Component {
+export default class Page2 extends Component {
   constructor(props) {
     super(props);
     this.state = {

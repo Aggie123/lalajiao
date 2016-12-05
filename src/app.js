@@ -44,11 +44,9 @@ const App = React.createClass({
               <Icon type="laptop" />
               <Link className="nav-text" to={{pathname:'/page2'}}>吉他</Link>
             </Menu.Item>
-            <Menu.Item key="notification">
-              <Icon type="notification" /><span className="nav-text">导航四</span>
-            </Menu.Item>
-            <Menu.Item key="folder">
-              <Icon type="folder" /><span className="nav-text">导航五</span>
+            <Menu.Item key="laptop">
+              <Icon type="laptop" />
+              <Link className="nav-text" to={{pathname:'/todo'}}>Todo</Link>
             </Menu.Item>
           </Menu>
           <div className="ant-aside-action" onClick={this.onCollapseChange}>

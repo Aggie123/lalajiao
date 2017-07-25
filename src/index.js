@@ -6,6 +6,7 @@ require("./scss/normalize.css")
 require("./scss/base.css")
 
 //import 'antd/dist/antd.css';  // or 'antd/dist/antd.less'
+import 'antd/dist/antd.css';  // or 'antd/dist/antd.less'
 import App from './app.js'
 import User from './Component/User'
 import Page1 from './container/page1'
@@ -21,9 +22,3 @@ render((
         </Route>
     </Router>
 ), document.getElementById('app'));
-
-/*<Route path="red-envelop" component={RedEnvelop}/>*/
-/*<Route path="red-envelop" component={RedEnvelop}/>
- <Route path="stars" component={Stars}/>
- <Route path="welfare" component={Warefare}/>
- */
